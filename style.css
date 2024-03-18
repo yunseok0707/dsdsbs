@@ -65,3 +65,22 @@ img {
     width: 100%;
     height: auto;
 }
+.element {
+  width: 50vw; /* 뷰포트의 너비의 50% */
+}
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1; /* flex-grow의 값이 1이므로, 사용 가능한 공간을 균등하게 나눠 가짐 */
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열이 각각 동일한 크기로 설정됨 */
+}
+@media (max-width: 600px) {
+  .element {
+    width: 100vw; /* 화면 너비가 600px 이하일 때, 너비를 100%로 조정 */
+  }
+}
