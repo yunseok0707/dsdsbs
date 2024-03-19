@@ -61,6 +61,11 @@ body, html {
   {
     width: fit-content;
   }
+  @media screen and (max-width:700px)
+    {
+         position: absolute; /* 절대 위치 */
+        top: 600px;
+        right: 20px;
     margin: 0;
     padding: 0;
 }
