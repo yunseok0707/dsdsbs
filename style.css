@@ -14,7 +14,7 @@ body, html {
 #map {
     flex: 70%;
     background-color: #f0f0f0;
-    position: flex; /* 수정 */
+    position: relative; /* 수정 */
     height: 600px;
     width: 70%;
 }
