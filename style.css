@@ -14,7 +14,13 @@ body, html {
     flex: 70%;
     background-color: #f0f0f0;
 }
-
+#map {
+    flex: 70%;
+    background-color: #f0f0f0;
+    position: absolute; /* 'position: auto'는 유효하지 않으므로 'relative'로 수정 */
+    height: 600px;/* 이곳에서 원하는 높이로 조절하세요 */
+    width: 70%
+}
 .info-section {
     flex: 30%;
     display: flex;
