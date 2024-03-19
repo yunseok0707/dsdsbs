@@ -27,7 +27,7 @@ body, html {
     width: 70%
 }
 
-@media screen and (max-width: 768px) { /* 일반적으로 모바일 기기로 간주하는 화면 최대 너비 */
+@media screen and (max-width: 1000px) { /* 일반적으로 모바일 기기로 간주하는 화면 최대 너비 */
     #map {
         width: 70%; /* 모바일 화면 너비에 맞게 조정 */
         height: 300px; /* 필요한 높이 값 설정 */
