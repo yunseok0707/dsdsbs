@@ -30,9 +30,12 @@ body, html {
 @media screen and (max-width: 768px) { /* 일반적으로 모바일 기기로 간주하는 화면 최대 너비 */
     #map {
         width: 70%; /* 모바일 화면 너비에 맞게 조정 */
-        height: 300px; /* 필요한 높이 값 설정 */
+        height: 200px; /* 필요한 높이 값 설정 */
         order: -1; /* flexbox 레이아웃을 사용하는 경우, 이 속성으로 지도를 상단에 배치 */
         position: absolute; /* 필요에 따라 위치 조정 */
+         /* 절대 위치 */
+        top: 500px;
+       
     }
 }
 
