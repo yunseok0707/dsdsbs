@@ -10,9 +10,30 @@ body, html {
     height: 100%;
 }
 
+/*#map {
+    flex: 70%;
+    background-color: #f0f0f0;
+    position: auto;
+   @media screen and (max-width:1500px)
+    {
+      width: 500px;
+    }
+}*/
 #map {
     flex: 70%;
     background-color: #f0f0f0;
+    position: absolute; /* 'position: auto'는 유효하지 않으므로 'relative'로 수정 */
+    height: 600px;/* 이곳에서 원하는 높이로 조절하세요 */
+    width: 70%
+}
+
+@media screen and (max-width: 768px) { /* 일반적으로 모바일 기기로 간주하는 화면 최대 너비 */
+    #map {
+        width: 70%; /* 모바일 화면 너비에 맞게 조정 */
+        height: 300px; /* 필요한 높이 값 설정 */
+        order: -1; /* flexbox 레이아웃을 사용하는 경우, 이 속성으로 지도를 상단에 배치 */
+        position: absolute; /* 필요에 따라 위치 조정 */
+    }
 }
 
 .info-section {
@@ -26,16 +47,27 @@ body, html {
 
 .logo img {
     position: absolute; /* 절대 위치 */
-    top: 10px; /* 상단에서 100px 떨어진 위치 */
-    right: 0px; /* 오른쪽에서 100px 떨어진 위치 */
-    max-width: 170%;
-    height: 300px;
+    top: 10px;
+    right: 20px;/* 오른쪽에서 100px 떨어진 위치 */
+
+  @media screen and (max-width:2000px)
+  {
+    width: 500px;
+  }
+  @media screen and (max-width:1500px) /* 상단에서 100px 떨어진 위치 */
+  {
+    width: fit-content;
+  }
     margin: 0;
     padding: 0;
 }
 
+
 .buttons {
     display: flex;
+    position: absolute; /* 절대 위치 */
+    top: 300x;
+    right: 20px;
     flex-direction: column;
 }
 
@@ -49,6 +81,15 @@ button {
     font-style: normal;
     width: 400px; /* 버튼의 너비 */
     height: 50px; /* 버튼의 높이 */
+    @media screen and (max-width:1500px)
+    {
+      width: fit-content;
+    }
+    @media screen and (max-height:1500px)
+    {
+      height: fit-content;
+    }
+
 }
 .top-right {
     position: absolute; /* 절대 위치 */
@@ -60,4 +101,8 @@ button {
     font-family: "Black Han Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+img {
+    width: 100%;
+    height: auto;
 }
