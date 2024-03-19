@@ -53,7 +53,7 @@ button {
 }
 .top-right {
     position: absolute;
-    top: 20px; /* 수정 */
+    top: 300px; /* 수정 */
     right: 50px;
     padding: 10px;
     background-color: white;
